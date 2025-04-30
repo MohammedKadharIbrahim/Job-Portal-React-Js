@@ -1,0 +1,121 @@
+
+.signup {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+
+.login-title,
+.signup-title {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+}
+
+
+.login-form,
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-input,
+.signup-input {
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login-input:focus,
+.signup-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+
+.login-button,
+.signup-button {
+    padding: 14px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background-color: #5a67d8;
+}
+
+.login-text,
+.signup-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link,
+.signup-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover,
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .login-container,
+    .signup-container {
+        padding: 30px 20px;
+    }
+
+    .login-title,
+    .signup-title {
+        font-size: 24px;
+    }
+}

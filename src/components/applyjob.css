@@ -1,0 +1,78 @@
+
+.apply-job-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #7483ab;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.apply-job-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.apply-job-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: #444;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.error {
+    color: #d93025;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.react-select-container {
+    margin-top: 0.5rem;
+}
+
+.ql-container {
+    border-radius: 8px;
+    min-height: 120px;
+}
+
+.ql-editor {
+    font-size: 1rem;
+}
+
+.ql-toolbar {
+    border-radius: 8px 8px 0 0;
+}

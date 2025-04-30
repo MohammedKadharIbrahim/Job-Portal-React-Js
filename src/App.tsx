@@ -1,25 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Signup from './features/auth/signup';
+import Login from './features/auth/login';
+import ProtectedRoute from './features/auth/ProtectedRoute';
+import JobList from './components/joblist';
+import { Profile } from './components/Profile';
+
+import { Message } from './components/message';
+import { MyJobs } from './components/myJobs';
+import ApplyJob from './components/applyjob';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route 
+          path="/joblist" 
+          element={
+            <ProtectedRoute>
+              <JobList />
+            </ProtectedRoute>
+          } 
+        />
+       <Route path="/applyjob/:jobId" element={<ApplyJob />} />
+
+        <Route 
+          path="/profile" 
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          } 
+        />
+        
+        <Route 
+          path="/message" 
+          element={
+            <ProtectedRoute>
+              <Message />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="/myjob" 
+          element={
+            <ProtectedRoute>
+              <MyJobs />
+            </ProtectedRoute>
+          } 
+        />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </Router>
   );
 }
 
