@@ -1,17 +1,6 @@
 {
   "jobs": [
     {
-      "id": "2",
-      "title": "javascript developer",
-      "company": "DevWorks",
-      "skills": [
-        "React",
-        "Node.js",
-        "GraphQL"
-      ],
-      "description": "Work on frontend and backend integrations."
-    },
-    {
       "id": "3",
       "title": "python developer",
       "company": "DevWorks",
@@ -153,7 +142,7 @@
       "description": "one year experience"
     },
     {
-      "id": 0,
+      "id": "0",
       "title": "angular",
       "company": "onedata software",
       "skills": [
